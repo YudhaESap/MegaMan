@@ -1,5 +1,5 @@
 // 导入 Transformers.js 的 pipeline
-import { pipeline } from 'https://cdn.jsdelivr.net/npm/@xenova/transformers@2.17.1';
+import { pipeline } from '@xenova/transformers';
 
 document.addEventListener('DOMContentLoaded', function() {
 
