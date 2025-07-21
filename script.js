@@ -32,12 +32,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Video list
     const videoList = [
-        'videos/3D-modeling-image.mp4',
-        'videos/jimeng-2025-07-16-1043-smiling-gracefully.mp4',
-        'videos/jimeng-2025-07-16-4437-peace-sign-smiling.mp4',
-        'videos/generated-cheering.mp4',
-        'videos/generated-dancing.mp4',
-        'videos/negative/jimeng-2025-07-16-9418-hands-on-hips-slightly-angry.mp4'
+        'megaman-videos/megaman-idle.mp4',
+    'megaman-videos/megaman-happy.mp4',
+    'megaman-videos/megaman-listening.mp4',
+    'megaman-videos/megaman-thinking.mp4'
     ];
 
     // --- Crossfade video switching ---
@@ -87,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (SpeechRecognition) {
         recognition = new SpeechRecognition();
         recognition.continuous = true; // Continuous recognition
-        recognition.lang = 'zh-CN'; // Set language to Chinese
+        recognition.lang = 'en-US'; // Set language to English (US)
         recognition.interimResults = true; // Get interim results
 
         recognition.onresult = (event) => {
@@ -190,16 +188,14 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // --- Sentiment analysis and reaction ---
-    const positiveWords = ['happy', 'glad', 'like', 'awesome', 'hello', 'beautiful'];
-    const negativeWords = ['sad', 'angry', 'hate', 'upset'];
+    const positiveWords = ['happy', 'glad', 'like', 'awesome', 'hello', 'beautiful', 'cool', 'great', 'fun'];
+    const negativeWords = ['sad', 'angry', 'hate', 'upset', 'terrible', 'bored'];
 
     const positiveVideos = [
-        'videos/jimeng-2025-07-16-1043-smiling-gracefully.mp4',
-        'videos/jimeng-2025-07-16-4437-peace-sign-smiling.mp4',
-        'videos/generated-cheering.mp4',
-        'videos/generated-dancing.mp4'
+        'megaman-videos/megaman-happy.mp4',
+        'megaman-videos/megaman-encourage.mp4'
     ];
-    const negativeVideo = 'videos/negative/jimeng-2025-07-16-9418-hands-on-hips-slightly-angry.mp4';
+    const negativeVideo = 'megaman-videos/megaman-concerned.mp4';
 
     // --- Local model sentiment analysis ---
     let classifier;
