@@ -44,30 +44,30 @@ It’s not just an LLM interface. MegaMan learns from you, remembers your prefer
 ## Project Structure (Planned)
 
 MegaMan/
-├── core/
-│   ├── llm_runner.py
-│   ├── plan_loop.py
-├── memory/
-│   ├── persona.yaml
-│   └── episodic.jsonl
-├── voice/
-│   ├── speech_to_text.py
-│   └── text_to_speech.py
-├── ui/
-│   ├── main_window.py
-│   └── assets/
-├── app.py
-└── README.md
+- core/
+-- llm_runner.py
+-- plan_loop.py
+- memory/
+-- persona.yaml
+-- episodic.jsonl
+- voice/
+-- speech_to_text.py
+-- text_to_speech.py
+- ui/
+-- main_window.py
+-- assets/
+- app.py
+- README.md
 
 ---
 
-## 🔒 Why Offline?
+## Why Offline?
 
 Your data should be yours. MegaMan is being built to run fully **locally** — no cloud API, no third-party tracking, no vendor lock-in. It’s private, secure, and personal.
 
 ---
 
-## 📡 Roadmap
+## Roadmap
 
 - [ ] Integrate Ollama backend
 - [ ] Implement memory reflection
@@ -78,13 +78,13 @@ Your data should be yours. MegaMan is being built to run fully **locally** — n
 
 ---
 
-## 🧑‍💻 Contributing
+## Contributing
 
 This project is in early prototyping. Contributions, ideas, and custom skins/themes welcome! Fork it, experiment, and help us build a better AGI companion.
 
 ---
 
-## 📄 License
+## License
 
 MIT. This is an open project. Please avoid direct references to Capcom IP. Fan-made inspiration only.
 
