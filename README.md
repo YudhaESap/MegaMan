@@ -90,6 +90,6 @@ MIT. This is an open project. Please avoid direct references to Capcom IP. Fan-m
 
 ---
 
-## 🚀 Author
+## Author
 
-[Yudha E. Saputra](https://github.com/YudhaESap) — AI researcher, builder, and believer in personal intelligence.
+Yudhaesap (https://github.com/YudhaESap)
